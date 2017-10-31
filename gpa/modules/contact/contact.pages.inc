@@ -99,13 +99,13 @@ function contact_site_form($form, &$form_state) {
   // because it can be abused to spam people.
   $form['copy'] = array(
     '#type' => 'checkbox',
-    '#title' => t('Send yourself a copy.'),
+    '#title' => t('Send a copy of this message to you.'),
     '#access' => $user->uid,
   );
   $form['actions'] = array('#type' => 'actions');
   $form['actions']['submit'] = array(
     '#type' => 'submit',
-    '#value' => t('Send message'),
+    '#value' => t('Send'),
   );
 
   return $form;
@@ -245,7 +245,7 @@ function contact_personal_form($form, &$form_state, $recipient) {
   $form['actions'] = array('#type' => 'actions');
   $form['actions']['submit'] = array(
     '#type' => 'submit',
-    '#value' => t('Send message'),
+    '#value' => t('Send'),
   );
   return $form;
 }
