@@ -23,7 +23,7 @@ function contact_site_form($form, &$form_state) {
     drupal_access_denied();
     drupal_exit();
   }
-
+	
   // Get an array of the categories and the current default category.
   $categories = db_select('contact', 'c')
     ->addTag('translatable')
@@ -64,23 +64,23 @@ function contact_site_form($form, &$form_state) {
   $form['#attributes']['class'][] = 'contact-form';
   $form['name'] = array(
     '#type' => 'textfield',
-    '#title' => t('Your name'),
+    '#title' => t('Name'),
     '#maxlength' => 255,
     '#default_value' => $user->uid ? format_username($user) : '',
     '#required' => TRUE,
   );
   $form['mail'] = array(
     '#type' => 'textfield',
-    '#title' => t('Your e-mail address'),
+    '#title' => t('E-mail'),
     '#maxlength' => 255,
     '#default_value' => $user->uid ? $user->mail : '',
     '#required' => TRUE,
   );
   $form['subject'] = array(
     '#type' => 'textfield',
-    '#title' => t('Subject'),
+    '#title' => 'CONTATO REALIZADO PELO SITE',
     '#maxlength' => 255,
-    '#required' => TRUE,
+	'#access' => '',
   );
   $form['cid'] = array(
     '#type' => 'select',
@@ -100,7 +100,7 @@ function contact_site_form($form, &$form_state) {
   $form['copy'] = array(
     '#type' => 'checkbox',
     '#title' => t('Send a copy of this message to you.'),
-    '#access' => $user->uid,
+    
   );
   $form['actions'] = array('#type' => 'actions');
   $form['actions']['submit'] = array(
