@@ -3484,7 +3484,7 @@ input[type="button"].btn-block {
   opacity: 1;
 }
 .collapse {
-  display: none;
+  /* display: none; */
 }
 .collapse.in {
   display: block;
@@ -7004,6 +7004,10 @@ img.imagem_tela_inicial {
     height: 364px!important;
 }
 
+a.logo.navbar-btn.pull-left {
+    margin-left: 20px;
+    padding-left: 0px;
+}
 
 .form-textarea-wrapper.resizable.textarea-processed.resizable-textarea {
     width: 378px!important;
@@ -7016,6 +7020,13 @@ img.imagem_tela_inicial {
   padding-left: 0px!important;
 }
 
+.navbar-nav {
+    float: right;
+    margin: 0;
+    padding-top: 144px;
+    padding-right: 0px;
+}
+
 }
 
 @media (max-width: 991px) {
@@ -7025,7 +7036,7 @@ img.imagem_tela_inicial {
     margin: 0;
     padding-top: 0px!important;
     padding-right: 0px;
-    margin-right: 15%;
+    margin-right: 6%;
 }
 
 a.logo.navbar-btn.pull-left {
@@ -7051,6 +7062,12 @@ img.imagem_tela_inicial {
 a.logo.navbar-btn.pull-left {
     margin-left: 0;
     padding-left: 0px;
+    position: absolute;
+    left: 50%;
+    top: -12%;
+    margin-left: -151px;
+    /* margin-top: -66px; */
+    px; */
 }
 
   
@@ -7060,14 +7077,56 @@ a.logo.navbar-btn.pull-left {
     padding-top: 0px!important;
     padding-right: 0px;
     margin-right: 0%;
-    height: 20px;
-    width: 100px;
+    /* height: 20px; */
+    /* width: 100px; */
+    margin-left: 50%;
+    /* padding-left: 28px; */
+    /* padding-right: 15px; */
+    padding-left: 0px;
+    position: absolute;
+    left:50%;
+    top: 45%;
+    margin-left: -195px;
+    margin-top: 52px;
 }
 .nav > li {
-    position: absolute;
+    position: relative;
     display: block;
     /* width: 107px; */
     font-size: 16px;
+    float: left;
     padding-right: 0px;
 }
+
+img.imagem_tela_inicial {
+    width: 100%!important;
+    height: 37.5%!important;
+}
+
+
+button.navbar-toggle {
+    display: none;
+}
+
+.row {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.form-textarea-wrapper.resizable.textarea-processed.resizable-textarea {
+    width: 425px!important;
+    float: right;
+    /* padding-bottom: 90px; */
+}
+
+.view.view-not-cias {
+    /* width: 300px; */
+    padding-bottom: 30px;
+    /* padding-top: 110px; */
+}
+
+aside.col-sm-3 {
+  padding-top:120px;
+}
+
 }
