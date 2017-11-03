@@ -1595,6 +1595,11 @@ pre code {
   .container {
     width: 970px;
   }
+
+
+
+
+
 }
 @media (min-width: 1200px) {
   .container {
@@ -1787,9 +1792,9 @@ pre code {
     width: 83.33333333%;
   }
   .col-sm-9 {
-    width: 60%;
+    width: 63%;
     padding-right: 110px;
-    padding-left: 135px;
+    padding-left: 145px;
   }
   .col-sm-8 {
     width: 66.66666667%;
@@ -2560,10 +2565,10 @@ output {
   border: 1px solid #ccc;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
-       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 .form-control:focus {
   border-color: #66afe9;
@@ -2636,10 +2641,12 @@ input[type="search"] {
 .checkbox {
   position: relative;
   display: block;
-  margin-top: 10px;
+  margin-top: 25px;
   margin-bottom: 10px;
   float: left;
   /* width: 10px; */
+  padding-left: 95px;
+  padding-right: 34px;
 }
 .radio label,
 .checkbox label {
@@ -3984,11 +3991,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   display: block;
   /* width: 107px; */
   font-size: 16px;
+  padding-right: 38px;
 }
 .nav > li > a {
   position: relative;
   display: block;
-  padding: 10px 15px;
+  padding: 10px 8px;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
@@ -4232,7 +4240,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .container-fluid > .navbar-header,
 .container > .navbar-collapse,
 .container-fluid > .navbar-collapse {
-  margin-right: -15px;
+  /* margin-right: -15px; */
   margin-left: -15px;
 }
 @media (min-width: 768px) {
@@ -4360,7 +4368,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: right;
     margin: 0;
     padding-top: 150px;
-    padding-right: 95px;
+    padding-right: 0px;
   }
   .navbar-nav > li {
     float: left;
@@ -4368,6 +4376,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-nav > li > a {
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+
+  .nav > li {
+    position: relative;
+    display: block;
+    /* width: 107px; */
+    font-size: 16px;
+    padding-right: 20px;
   }
 }
 .navbar-form {
@@ -4515,13 +4531,15 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-nav > li > a {
   color: #CDC3BB;
-  font-size: 20px;
+  font-size: 16px;
   font-family: 'Calibri';
+  border-bottom: 6px solid #525249;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #333;
+  /* color: #333; */
   background-color: transparent;
+  border-bottom: 6px solid #CDC3BB;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -6765,6 +6783,7 @@ button.close {
 /*# sourceMappingURL=bootstrap.css.map */
 header#navbar {
     max-width: 1200px;
+    /* height: 180px; */
 }
 
 a.logo.navbar-btn.pull-left img {
@@ -6791,6 +6810,8 @@ a.logo.navbar-btn.pull-left {margin-left: 140px;padding-left: 0px;}
     /* padding-bottom: 10px; */
     font-family: 'News Goth BT Bold';
     font-size: 18px;
+    padding-bottom: 20p;
+    padding-left: 8px;
 }
 
 .view.view-not-cias {
@@ -6819,7 +6840,7 @@ a.logo.navbar-btn.pull-left {margin-left: 140px;padding-left: 0px;}
 }
 
 section#block-block-5 {
-    padding-bottom: 300px;
+    padding-bottom: 235px;
 }
 
 
@@ -6854,18 +6875,28 @@ div.views-row.views-row-4.views-row-even.views-row-last > div.views-field.views-
     font-family: 'News Goth BT Bold';
     font-size: 18px;
     color: #866B69;
+    /* padding-bottom: 25px; */
+    border-bottom: 2px solid #4B535C;
 }
+
+.titulos_marrom_area {}
+
+.titulos_marrom_area {}
 
 .area {
     font-family: 'News Goth BT Roman';
     font-size: 16px;
     color: #4B535C;
+    padding-top: 25px;
+    padding-bottom: 50px;
 }
 
 .texto_contato {
     color: #4B535C;
     font-family: 'News Goth BT Roman';
     font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 .label.control-label {
@@ -6882,17 +6913,20 @@ button#edit-submit {
     font-family: 'News Goth BT Bold';
     /* background-color: white; */
     font-size: 18px;
+    /* padding-top: 10px; */
 }
 
 div#edit-actions {
     float: left;
         clear: none!important;
+        padding-top: 15px;
 }
 
 .texto_link {
     font-family: 'News Goth BT Roman';
     font-size: 16px;
     color: #4B535C;
+    padding-top: 25px;
 }
 
 .texto_localizacao {
@@ -6920,6 +6954,126 @@ div#edit-actions {
 
 label.control-label {
     font-family: 'News Goth BT Bold';
-    font-size: 18px;
+    font-size: 17px;
     color: #4B535C;
+}
+
+
+.rodape {
+    background-color: #525249;
+        height: 147px;
+}
+
+.logo_rodape {
+    float: right;
+    padding-top: 45px;
+    padding-right: 132px;
+}
+
+footer.footer.container {
+    padding-top: 0px;
+    margin-top: 90px;
+    padding-bottom: 0px;
+}
+
+header#navbar {
+    margin-top: 0px;
+}
+
+
+section#block-block-2 {
+    padding-top: 20px;
+        padding-bottom: 50px;
+}
+
+input#edit-name {
+    width: 425px;
+    float: right;
+}
+
+
+
+input#edit-mail{
+    width: 425px;
+    float: right;
+}
+
+
+.form-textarea-wrapper.resizable.textarea-processed.resizable-textarea {
+    width: 425px;
+    float: right;
+}
+
+@media (max-width: 1199px) {
+img.imagem_tela_inicial {
+    width: 970px!important;
+    height: 364px!important;
+}
+
+
+.form-textarea-wrapper.resizable.textarea-processed.resizable-textarea {
+    width: 378px!important;
+    float: right;
+}
+
+.radio,
+.checkbox {
+  
+  padding-left: 0px!important;
+}
+
+}
+
+@media (max-width: 991px) {
+
+  .navbar-nav {
+    float: right;
+    margin: 0;
+    padding-top: 0px!important;
+    padding-right: 0px;
+    margin-right: 15%;
+}
+
+a.logo.navbar-btn.pull-left {
+    margin-left: 70%;
+    padding-left: 0px;
+}
+
+
+img.imagem_tela_inicial {
+    width: 750px!important;
+    height: 282px!important;
+}
+
+.form-textarea-wrapper.resizable.textarea-processed.resizable-textarea {
+    width: 235px!important;
+    float: right;
+}
+
+}
+
+@media (max-width: 767px) {
+
+a.logo.navbar-btn.pull-left {
+    margin-left: 0;
+    padding-left: 0px;
+}
+
+  
+  .navbar-nav {
+    float: left;
+    margin: 0;
+    padding-top: 0px!important;
+    padding-right: 0px;
+    margin-right: 0%;
+    height: 20px;
+    width: 100px;
+}
+.nav > li {
+    position: absolute;
+    display: block;
+    /* width: 107px; */
+    font-size: 16px;
+    padding-right: 0px;
+}
 }
