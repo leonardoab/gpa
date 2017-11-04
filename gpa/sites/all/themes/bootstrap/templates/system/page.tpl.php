@@ -99,15 +99,15 @@
     <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
       <div class="navbar-collapse collapse" id="navbar-collapse">
         <nav role="navigation">
-          <?php if (!empty($primary_nav)): ?>
-            <?php print render($primary_nav); ?>
-          <?php endif; ?>
-          <?php if (!empty($secondary_nav)): ?>
-            <?php print render($secondary_nav); ?>
-          <?php endif; ?>
-          <?php if (!empty($page['navigation'])): ?>
-            <?php print render($page['navigation']); ?>
-          <?php endif; ?>
+          
+		  
+		  <ul class="menu nav navbar-nav">
+			<li class="first leaf"><a href="#ESCRITORIO" title="">O ESCRITÓRIO</a></li>
+			<li class="leaf"><a href="#AREAS" title="">ÁREAS DE ATUAÇÃO</a></li>
+			<li class="leaf"><a href="#NOTICIAS" title="">NOTÍCIAS</a></li>
+			<li class="last leaf"><a href="#CONTATO" title="">CONTATO</a></li>
+		  </ul>
+		  
         </nav>
       </div>
     <?php endif; ?>
