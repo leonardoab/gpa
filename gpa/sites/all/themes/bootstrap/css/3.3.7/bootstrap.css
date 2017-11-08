@@ -2636,6 +2636,7 @@ input[type="search"] {
 }
 .form-group {
   margin-bottom: 15px;
+  /* float: right; */
 }
 .radio,
 .checkbox {
@@ -6808,6 +6809,20 @@ a.logo.navbar-btn.pull-left {margin-left: 140px;padding-left: 0px;}
     padding-left: 8px;
 }
 
+.titulo_branco_marrom_left_m {
+    background-color: #525249;
+    opacity: 0.95;
+    color: #DFDFC7;
+    text-align: center;
+    /* padding-bottom: 10px; */
+    font-family: 'News Goth BT Bold';
+    font-size: 18px;
+    padding-bottom: 20p;
+    padding-left: 8px;
+    /* padding-top: 25px; */
+    margin-top: 25px;
+}
+
 .view.view-not-cias {
     /* width: 300px; */
     padding-bottom: 30px;
@@ -6922,6 +6937,49 @@ div#edit-actions {
     color: #4B535C;
     padding-top: 25px;
 }
+
+.texto_localizacao_m{
+ font-family: 'News Goth BT Roman';
+ font-size: 16px;
+ color: #DFDFC7;
+ text-align: center;
+}
+
+.texto_localizacao_i{
+ font-family: 'News Goth BT Roman';
+ font-size: 16px;
+ color: #DFDFC7;
+ text-align: center;
+ padding-top: 15px;
+}
+
+.texto_localizacao_f{
+ font-family: 'News Goth BT Roman';
+ font-size: 16px;
+ color: #DFDFC7;
+ text-align: center;
+ padding-bottom: 14px;
+}
+
+.texto_localizacao_d{
+ font-family: 'News Goth BT Roman';
+ font-size: 16px;
+ color: #DFDFC7;
+ text-align: center;
+ padding-top: 25px;
+ border-top: 2px solid rgba(223, 223, 199, 0.7);
+ width: 275px;
+ margin-left: 122px;
+}
+
+.menor_m{
+ font-family: 'News Goth BT Roman';
+ font-size: 16px;
+ color: #DFDFC7;
+ text-align: center;
+}
+
+
 
 .texto_localizacao {
     float: left;
@@ -7129,4 +7187,81 @@ aside.col-sm-3 {
   padding-top:120px;
 }
 
+}
+
+div#logo-title {
+    display: none;
+}
+
+.row.manutencao-page{
+   position: relative;
+    left:50%;
+    top: 45%;
+    margin-left: -260px;
+    width:520px;
+}
+
+.img_topo_manutenca{
+
+width: 309px!important;
+
+height: 184px;
+
+position: relative;
+
+left: 50%;
+
+margin-left: -155px;
+
+top: 1%;
+}
+
+.topo_manutencao {height: 200px;background-color: #525249;width: 520px;position: relative;left: 50%;opacity: 0.95;margin-left: -260px;margin-top: 0px;}
+
+img.imagem_tela_inicial_manutencao {
+    margin-top: -32px;
+}
+
+section#block-block-13 {
+    background-color: #525249;
+    opacity: 0.95;
+}
+
+section#block-block-13 {
+    height: 185px;
+    margin-top: -112px;
+}
+
+input#edit-name-m {
+    float: right;
+    width: 425px;
+    margin-top: -32px;
+}
+
+input#edit-mail-m {
+    float: right;
+    width: 425px;
+    margin-top: -32px;
+}
+
+.form-textarea-wrapper-m.resizable.textarea-processed.resizable-textarea > textarea#edit-message {
+    width: 425px;
+    margin-top: -32px;
+    float: right;
+}
+
+.copy {
+    /* float: left; */
+    position: relative;
+    top: 80%;
+    padding-left: 95px;
+}
+
+.copy {
+    /* float: left; */
+    position: relative;
+    top: 80%;
+    padding-left: 95px;
+    color: #DFDFC7;
+    opacity: 0.95;
 }

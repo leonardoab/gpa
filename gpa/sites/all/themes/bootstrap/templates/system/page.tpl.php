@@ -73,7 +73,7 @@
  * @ingroup templates
  */
 ?>
-<header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
+<header id="navbar" role="banner" class="<?php print $navbar_classes; ?>" <?php if ($is_front): print 'style="display:none"'; endif; ?>>
   <div class="<?php print $container_class; ?>">
     <div class="navbar-header">
       <?php if ($logo): ?>
@@ -97,8 +97,8 @@
     </div>
 
     <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-      <div class="navbar-collapse collapse" id="navbar-collapse">
-        <nav role="navigation">
+      <div class="navbar-collapse collapse" id="navbar-collapse" >
+        <nav role="navigation" <?php if ($is_front): print 'style="display:none"'; endif; ?> >
           
 		  
 		  <ul class="menu nav navbar-nav">
@@ -107,6 +107,8 @@
 			<li class="leaf"><a href="#NOTICIAS" title="">NOTÍCIAS</a></li>
 			<li class="last leaf"><a href="#CONTATO" title="">CONTATO</a></li>
 		  </ul>
+		  
+
 		  
         </nav>
       </div>
@@ -124,7 +126,7 @@
     <?php print render($page['header']); ?>
   </header> <!-- /#page-header -->
 
-  <div class="row">
+  <div class="row <?php if ($is_front): print 'manutencao-page'; endif; ?> " >
 
     <?php if (!empty($page['sidebar_first'])): ?>
       <aside class="col-sm-3" role="complementary">
@@ -166,5 +168,6 @@
 <?php if (!empty($page['footer'])): ?>
   <footer class="footer <?php print $container_class; ?>">
     <?php print render($page['footer']); ?>
+	
   </footer>
 <?php endif; ?>
