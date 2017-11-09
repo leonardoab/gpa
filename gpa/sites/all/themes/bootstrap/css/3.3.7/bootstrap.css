@@ -6820,7 +6820,8 @@ a.logo.navbar-btn.pull-left {margin-left: 140px;padding-left: 0px;}
     padding-bottom: 20p;
     padding-left: 8px;
     /* padding-top: 25px; */
-    margin-top: 25px;
+    margin-top: 30px;
+    height: 30px;
 }
 
 .view.view-not-cias {
@@ -6905,7 +6906,7 @@ div.views-row.views-row-4.views-row-even.views-row-last > div.views-field.views-
     font-family: 'News Goth BT Roman';
     font-size: 16px;
     padding-top: 20px;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
 }
 
 .label.control-label {
@@ -6958,7 +6959,8 @@ div#edit-actions {
  font-size: 16px;
  color: #DFDFC7;
  text-align: center;
- padding-bottom: 14px;
+ padding-bottom: 17px;
+ margin-top: -5px;
 }
 
 .texto_localizacao_d{
@@ -6966,7 +6968,7 @@ div#edit-actions {
  font-size: 16px;
  color: #DFDFC7;
  text-align: center;
- padding-top: 25px;
+ padding-top: 23px;
  border-top: 2px solid rgba(223, 223, 199, 0.7);
  width: 275px;
  margin-left: 122px;
@@ -7024,7 +7026,7 @@ label.control-label {
 
 footer.footer.container {
     padding-top: 0px;
-    margin-top: 90px;
+    /* margin-top: 90px; */
     padding-bottom: 0px;
 }
 
@@ -7216,10 +7218,12 @@ margin-left: -155px;
 top: 1%;
 }
 
-.topo_manutencao {height: 200px;background-color: #525249;width: 520px;position: relative;left: 50%;opacity: 0.95;margin-left: -260px;margin-top: 0px;}
+.topo_manutencao {height: 200px;background-color: #525249;width: 520px;position: relative;left: 50%;opacity: 0.95;margin-left: -260px;margin-top: 0px;z-index: 1;/* padding-top: 45px; */margin-top: 45px;}
 
 img.imagem_tela_inicial_manutencao {
     margin-top: -32px;
+    opacity: 0.8;
+    z-index: 0;
 }
 
 section#block-block-13 {
@@ -7229,7 +7233,7 @@ section#block-block-13 {
 
 section#block-block-13 {
     height: 185px;
-    margin-top: -112px;
+    margin-top: -117px;
 }
 
 input#edit-name-m {
@@ -7264,4 +7268,41 @@ input#edit-mail-m {
     padding-left: 95px;
     color: #DFDFC7;
     opacity: 0.95;
+}
+
+.copy_m {
+    /* float: left; */
+    position: relative;
+    top: 100%;
+    /* padding-left: 95px; */
+    color: #525249;
+    opacity: 0.95;
+    float: right;
+    /* right: -3%; */
+    left: 16%;
+    font-family: 'Calibri';
+    font-size: 12px;
+}
+
+.rodape_m {
+    background-color: #525249;
+    height: 85px;
+    width: 860px;
+}
+
+.logo_rodape_m {
+    float: right;
+    padding-top: 17px;
+    padding-right: 52px;
+}
+
+footer.footer.container {
+    border: none;
+}
+
+section#block-block-14 {
+    left: 28.5%;
+    position: relative;
+    /* padding-bottom: 20px; */
+    margin-bottom: 20px;
 }
