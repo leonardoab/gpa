@@ -7064,6 +7064,20 @@ img.imagem_tela_inicial {
     height: 364px!important;
 }
 
+.rodape_m {
+    background-color: #525249;
+    height: 85px;
+    width: 100%!important;
+}
+
+section#block-block-14 {
+    left: 28.5%;
+    position: relative;
+    /* padding-bottom: 20px; */
+    margin-bottom: 20px;
+    width: 72%!important;
+}
+
 a.logo.navbar-btn.pull-left {
     margin-left: 20px;
     padding-left: 0px;
@@ -7197,10 +7211,10 @@ div#logo-title {
 
 .row.manutencao-page{
    position: relative;
-    left:50%;
-    top: 45%;
-    margin-left: -260px;
-    width:520px;
+   left:50%;
+   top: 45%;
+   margin-left: -260px;
+   width:520px;
 }
 
 .img_topo_manutenca{
@@ -7298,12 +7312,31 @@ input#edit-mail-m {
 
 footer.footer.container {
     border: none;
+    /* display: none; */
 }
 
 section#block-block-14 {
     left: 28.5%;
     position: relative;
-    /* padding-bottom: 20px; */
+    padding-bottom: 20px;
     margin-bottom: 20px;
     width: 860px;
+}
+
+@media (max-width: 567px) {
+
+section#block-block-14 {
+    left: 0;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    width: 100%!important;
+}
+
+.rodape_m {
+    background-color: #525249;
+    height: 85px;
+    /* width: 860px!important; */
+}
+
 }
