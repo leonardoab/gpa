@@ -7394,4 +7394,29 @@ img.imagem_tela_inicial_manutencao {
     margin-top: 30px;
     height: 30px;
 }
+
+.copy_m {
+    /* float: left; */
+    position: relative;
+    top: 100%;
+    /* padding-left: 95px; */
+    color: #525249;
+    opacity: 0.95;
+    float: right;
+    /* right: -3%; */
+    left: 0%;
+    font-family: 'Calibri';
+    font-size: 12px;
+}
+
+.texto_localizacao_d {
+    font-family: 'News Goth BT Roman';
+    font-size: 16px;
+    color: #DFDFC7;
+    text-align: center;
+    padding-top: 23px;
+    border-top: 2px solid rgba(223, 223, 199, 0.7);
+    width: 100%;
+    margin-left: 0px;
+}
 }
